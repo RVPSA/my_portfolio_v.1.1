@@ -1,10 +1,10 @@
 import './App.css'
-import SkillCard from './components/SkillCard'
+import ProjectCard from './components/ProjectCard'
 
 function App() {
   return(
     <>
-    <div className='bg-[#282c33] p-10'><SkillCard></SkillCard></div>
+    <div className='bg-[#282c33] p-10'><ProjectCard></ProjectCard></div>
     
     </>
   )
