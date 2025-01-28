@@ -42,7 +42,10 @@ const ProjectCard = () => {
         <div className="p-4">
           <h1 className="text-white text-lg py-3">ChertNodes</h1>
           <p className="text-slate-400 text-sm pb-3">Server hosting</p>
-          <div className="flex flex-row justify-start gap-10">
+          <div
+            className="flex flex-row justify-start gap-5 
+            STablet:gap-10"
+          >
             <Button></Button>
             <Button></Button>
             {/* <div
