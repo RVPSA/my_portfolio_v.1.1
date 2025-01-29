@@ -14,7 +14,7 @@ import ClickSpark from "../sideSupportComponent/ClickSpark.jsx";
 
 type ButtonProps = {
   text: string;
-  shortText?: string;
+  shortText?:string;
   onClick: () => void;
 };
 const Button = (prop: ButtonProps) => {
@@ -34,7 +34,7 @@ const Button = (prop: ButtonProps) => {
           {prop.text}
         </h1>
         <h1 className="flex STablet:hidden absolute inset-0 z-0 pl-1">
-          {prop.shortText != "" ? prop.shortText : prop.text}
+          {prop.shortText != null ? prop.shortText : prop.text}
         </h1>
         {/* //<>Use ClickSpark component, as the top layer of the button div */}
         <div className="absolute h-full w-full top-0 left-0">
