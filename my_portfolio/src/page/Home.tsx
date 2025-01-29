@@ -1,5 +1,6 @@
 import Button from "../components/Button";
 import { firstComma, lastComma, akeshImage, dots, design } from "../assets";
+import SplitText from "../sideSupportComponent/SplitText";
 /**
  * Home page
  *
@@ -27,19 +28,39 @@ const Home = () => {
         </div>
         {/* //<> Image section and current status */}
         <div className="col-span-12 STablet:col-span-5 relative">
-            {/* //TODO Need to check design position */}
+          {/* //TODO Need to check design position */}
           <div className="absolute top-10">
-            <img src={design} alt="Image of Akesh" className="w-20 h-20" />
+            <img
+              src={design}
+              alt="Image of lines"
+              className="w-10 h-10 Laptop:w-20 Laptop:h-20"
+            />
           </div>
           <div className="absolute bottom-16 right-4">
-            <img src={dots} alt="Image of Akesh" className="w-15 h-15" />
+            <img
+              src={dots}
+              alt="Image of fots"
+              className="w-10 h-10 Laptop:w-20 Laptop:h-20"
+            />
           </div>
-          <img src={akeshImage} alt="Image of Akesh" className="" />
+          <img src={akeshImage} alt="Image of Akesh" className="w-full h-5/6" />
 
           <div className="border-2 border-slate-400 p-2 text-white grid grid-cols-12 items-center">
             <div className="w-[15px] h-[15px] bg-[#775288] col-span-1 justify-center"></div>
             <div className="col-span-11 justify-center items-center">
-              Currently working on portfolio
+              <SplitText
+                text="Currently working on portfolio"
+                className=""
+                delay={120}
+                animationFrom={{
+                  opacity: 0,
+                  transform: "translate3d(0,50px,0)",
+                }}
+                animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+                threshold={0.2}
+                rootMargin="-50px"
+                onLetterAnimationComplete={() => {}}
+              />
             </div>
           </div>
         </div>
