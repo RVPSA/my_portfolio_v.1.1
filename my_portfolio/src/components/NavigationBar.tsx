@@ -19,10 +19,10 @@ const NavigationBar = () => {
     <>
       <div className="flex flex-row justify-between">
         <div className="text-white text-xl font-bold">Akesh</div>
-        {/* //<> Show when screen size is STablet or up */}
+        {/* //<> Show when screen size is Laptop or up */}
         <div
           className="hidden
-        STablet:flex STablet:flex-row STablet:justify-between STablet:gap-9"
+        Laptop:flex Laptop:flex-row Laptop:justify-between Laptop:gap-9"
         >
           <h1 className="text-white">#Home</h1>
           <h1 className="text-slate-400">#Works</h1>
@@ -33,10 +33,10 @@ const NavigationBar = () => {
           </div>
         </div>
 
-        {/* //<> Hide when screen size is STablet or up */}
+        {/* //<> Hide when screen size is Laptop or up */}
         <div
           className="relative
-        STablet:hidden"
+        Laptop:hidden"
         >
           <img
             src={toggleMenuIcon ? menu : close}
@@ -47,8 +47,8 @@ const NavigationBar = () => {
           <div
             className={`${
               !toggleMenuIcon ? "flex" : "hidden"
-            } top-10 right-0 absolute bg-[#282c33]/50 w-screen min-h-screen
-            flex-col p-10 gap-9`}
+            } top-10 right-0 absolute bg-[#282c33] w-screen min-h-screen
+            flex-col p-10 gap-9 z-10`}
           >
             <h1 className="text-white">#Home</h1>
             <h1 className="text-slate-400">#Works</h1>

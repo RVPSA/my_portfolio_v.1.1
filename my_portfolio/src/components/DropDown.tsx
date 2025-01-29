@@ -53,7 +53,7 @@ const DropDown = () => {
       // */}
       {showList && (
         <div
-          className="STablet:right-0 STablet:origin-top-right absolute z-10 mt-2 w-56 rounded-md bg-[#282c33] shadow-lg ring-1 ring-black/5 focus:outline-none"
+          className="Laptop:right-0 Laptop:origin-top-right absolute z-10 mt-2 w-56 rounded-md bg-[#282c33] shadow-lg ring-1 ring-black/5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
