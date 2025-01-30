@@ -48,7 +48,7 @@ const NavigationBar = () => {
             className={`${
               !toggleMenuIcon ? "flex" : "hidden"
             } top-10 right-0 absolute bg-[#282c33] w-screen min-h-screen
-            flex-col p-10 gap-9 z-10`}
+            flex-col p-10 gap-9 z-10 items-start`}
           >
             <button className="text-white">#Home</button>
             <button className="text-slate-400">#Works</button>
