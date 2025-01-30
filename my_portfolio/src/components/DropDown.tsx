@@ -21,7 +21,7 @@ const DropDown = () => {
     setShowList(!showList);
   };
   return (
-    <div className="text-slate-400 relative inline-block text-left">
+    <div className="text-white relative inline-block text-left">
       {/* //<> Upper part of the dropdown with arrow */}
       <div>
         <button
@@ -34,7 +34,7 @@ const DropDown = () => {
         >
           {name}
           <svg
-            className="-mr-1 size-5 text-gray-400"
+            className="-mr-1 size-5 text-white"
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
