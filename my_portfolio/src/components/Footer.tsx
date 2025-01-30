@@ -18,15 +18,28 @@ const Footer = () => {
         <div className="col-span-1 grid justify-center">
           <div className="pt-5 text-white">Media</div>
           <div className="flex flex-row gap-3">
-            <div className="w-[20px] h-[20px]">
-              <img src={email} className="w-full h-full object-fill" />
-            </div>
-            <div className="w-[20px] h-[20px]">
-              <img src={github} className="w-full h-full object-fill" />
-            </div>
-            <div className="w-[20px] h-[20px]">
-              <img src={linkedin} className="w-full h-full object-fill" />
-            </div>
+            <a
+              href="mailto:akeshramasinghe@gmail.com?subject=Hello! From Portfolio"
+              target="_blank"
+            >
+              <div className="w-[20px] h-[20px]">
+                <img src={email} className="w-full h-full object-fill" />
+              </div>
+            </a>
+            <a href="https://github.com/RVPSA" target="_blank">
+              {" "}
+              <div className="w-[20px] h-[20px]">
+                <img src={github} className="w-full h-full object-fill" />
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/akesh-ramasinghe"
+              target="_blank"
+            >
+              <div className="w-[20px] h-[20px]">
+                <img src={linkedin} className="w-full h-full object-fill" />
+              </div>
+            </a>
           </div>
         </div>
         <div className="col-span-2 grid justify-center pb-5">

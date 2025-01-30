@@ -27,7 +27,7 @@ const Contact = () => {
         <div className="col-span-12 Laptop:col-span-6 grid justify-center">
           <div className="border-2 border-slate-400 p-5">
             <div className="text-white py-3">Message me here</div>
-            <a href="mailto:akeshramasinghe@gmail.com?subject=Hello! From Portfolio">
+            <a href="mailto:akeshramasinghe@gmail.com?subject=Hello! From Portfolio" target="_blank">
               <div className="text-slate-400 pb-3 flex flex-row gap-1">
                 <div className="w-[20px] h-[20px]">
                   <img
@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
             </a>
 
-            <a href="sms:+393920976765">
+            <a href="sms:+393920976765" target="_blank">
               <div className="text-slate-400 flex flex-row gap-1 pb-3">
                 <div className="w-[20px] h-[20px]">
                   <img
@@ -53,7 +53,7 @@ const Contact = () => {
               </div>
             </a>
 
-            <a href="https://wa.me/+393920976765">
+            <a href="https://wa.me/+393920976765" target="_blank">
               <div className="text-slate-400 flex flex-row gap-1">
                 <div className="w-[20px] h-[20px]">
                   <img
