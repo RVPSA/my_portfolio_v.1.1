@@ -1,13 +1,12 @@
-import './App.css'
-import ProjectCard from './components/ProjectCard'
+import "./App.css";
+import NavRouts from "./routings/NavRouts";
 
 function App() {
-  return(
+  return (
     <>
-    <div className='bg-[#282c33] p-10'><ProjectCard></ProjectCard></div>
-    
+      <NavRouts></NavRouts>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
