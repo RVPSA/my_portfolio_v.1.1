@@ -112,7 +112,7 @@ const Home = () => {
             <div className="col-span-4 Laptop:col-span-2 text-white">
               <div className="w-full text-xl font-semibold">
                 <span className="text-[#775288] text-2xl font-bold">#</span>
-                Projects
+                projects
               </div>
             </div>
             <div className="h-[2px] bg-[#775288] col-span-4 Laptop:col-span-5"></div>
@@ -138,7 +138,7 @@ const Home = () => {
             <div className="col-span-4 Laptop:col-span-2 text-white">
               <div className="w-full text-xl font-semibold">
                 <span className="text-[#775288] text-2xl font-bold">#</span>
-                Skills
+                skills
               </div>
             </div>
             <div className="h-[2px] bg-[#775288] col-span-4 Laptop:col-span-5"></div>
@@ -199,7 +199,7 @@ const Home = () => {
             <div className="col-span-4 Laptop:col-span-2 text-white">
               <div className="w-full text-xl font-semibold">
                 <span className="text-[#775288] text-2xl font-bold">#</span>
-                About-me
+                about-me
               </div>
             </div>
             <div className="h-[2px] bg-[#775288] col-span-4 Laptop:col-span-5"></div>
@@ -249,7 +249,7 @@ const Home = () => {
             <div className="col-span-4 Laptop:col-span-2 text-white">
               <div className="w-full text-xl font-semibold">
                 <span className="text-[#775288] text-2xl font-bold">#</span>
-                Contacts
+                contacts
               </div>
             </div>
             <div className="h-[2px] bg-[#775288] col-span-4 Laptop:col-span-5"></div>
