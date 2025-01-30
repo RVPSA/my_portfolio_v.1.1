@@ -1,6 +1,9 @@
 import DropDown from "./DropDown";
 import { menu, close } from "../assets";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+import Button from "./Button";
+import { useLocation } from "react-router";
 
 /**
  * Navigation bar design and state handling component.
@@ -9,11 +12,30 @@ import { useState } from "react";
 const NavigationBar = () => {
   //<> menu icon changing state, true = show menu icon/ false= show close icon
   const [toggleMenuIcon, setMenuToggleIcon] = useState(true);
+  const [activeButton, setActiveButton] = useState("/");
+
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   //<> handle the visibility of menu list for mobile screen
   const handleShowMenuList = () => {
     setMenuToggleIcon(!toggleMenuIcon);
   };
+
+  const handleActiveButton = () => {
+    if (pathname === "/") {
+      setActiveButton("/");
+    } else if (pathname === "/work") {
+      setActiveButton("/work");
+    } else if (pathname === "/aboutme") {
+      setActiveButton("/aboutme");
+    } else if (pathname === "/contact") {
+      setActiveButton("/contact");
+    }
+  };
+  useEffect(() => {
+    handleActiveButton();
+  }, [pathname]);
 
   return (
     <>
@@ -24,10 +46,42 @@ const NavigationBar = () => {
           className="hidden
         Laptop:flex Laptop:flex-row Laptop:justify-between Laptop:gap-9"
         >
-          <button className="text-white">#Home</button>
-          <button className="text-slate-400">#Works</button>
-          <button className="text-slate-400">#About-me</button>
-          <button className="text-slate-400">#Contacts</button>
+          {/* <button
+            className="text-white"
+            onClick={() => {
+              navigate("/home");
+            }}
+          >
+            #Home
+          </button> */}
+          <Button
+            text="#home"
+            isborder={activeButton === "/" ? true : false}
+            onClick={() => {
+              navigate("/");
+            }}
+          ></Button>
+          <Button
+            text="#Works"
+            isborder={activeButton === "/work" ? true : false}
+            onClick={() => {
+              navigate("/work");
+            }}
+          ></Button>
+          <Button
+            text="#About-me"
+            isborder={activeButton === "/aboutme" ? true : false}
+            onClick={() => {
+              navigate("/aboutme");
+            }}
+          ></Button>
+          <Button
+            text="#Contacts"
+            isborder={activeButton === "/contact" ? true : false}
+            onClick={() => {
+              navigate("/contact");
+            }}
+          ></Button>
           <div>
             <DropDown></DropDown>
           </div>
@@ -50,13 +104,42 @@ const NavigationBar = () => {
             } top-10 right-0 absolute bg-[#282c33] w-screen min-h-screen
             flex-col p-10 gap-9 z-10 items-start`}
           >
-            <button className="text-white">#Home</button>
-            <button className="text-slate-400">#Works</button>
-            <button className="text-slate-400">#About-me</button>
-            <button className="text-slate-400">#Contacts</button>
-            <div>
-              <DropDown></DropDown>
-            </div>
+            <Button
+            text="#home"
+            isborder={activeButton === "/" ? true : false}
+            onClick={() => {
+              navigate("/");
+              handleShowMenuList()
+            }}
+          ></Button>
+          <Button
+            text="#Works"
+            isborder={activeButton === "/work" ? true : false}
+            onClick={() => {
+              navigate("/work");
+              handleShowMenuList()
+            }}
+          ></Button>
+          <Button
+            text="#About-me"
+            shortText="#me"
+            isborder={activeButton === "/aboutme" ? true : false}
+            onClick={() => {
+              navigate("/aboutme");
+              handleShowMenuList()
+            }}
+          ></Button>
+          <Button
+            text="#Contacts"
+            isborder={activeButton === "/contact" ? true : false}
+            onClick={() => {
+              navigate("/contact");
+              handleShowMenuList()
+            }}
+          ></Button>
+          <div>
+            <DropDown></DropDown>
+          </div>
           </div>
         </div>
       </div>
