@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div className="col-span-2 grid justify-center pb-5">
           <div className="flex flex-col Laptop:flex-row gap-5 text-slate-400">
-            <p>&copy; Copyright 2024,</p>
+            <p>&copy; Copyright 2025,</p>
             <p>Made By Akesh</p>
           </div>
         </div>
