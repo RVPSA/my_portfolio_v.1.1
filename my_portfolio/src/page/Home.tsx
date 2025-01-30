@@ -6,18 +6,19 @@ import {
   dots,
   design,
   email,
-  linkedin,
   call,
   whatsapp,
 } from "../assets";
 import SplitText from "../sideSupportComponent/SplitText";
 import ProjectCard from "../components/ProjectCard";
 import SkillCard from "../components/SkillCard";
+import { useNavigate } from "react-router";
 /**
  * Home page
  *
  */
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="grid grid-cols-12 pt-12">
@@ -34,7 +35,9 @@ const Home = () => {
           </h1>
           <Button
             text="Contact me !!"
-            onClick={() => {}}
+            onClick={() => {
+              navigate("/contact");
+            }}
             shortText="Call !"
           ></Button>
         </div>
@@ -117,7 +120,14 @@ const Home = () => {
             </div>
             <div className="h-[2px] bg-[#775288] col-span-4 Laptop:col-span-5"></div>
             <div className="col-span-3 Laptop:col-span-5 grid justify-end">
-              <div className="text-white">View All </div>
+              <div
+                className="text-white cursor-pointer"
+                onClick={() => {
+                  navigate("/work");
+                }}
+              >
+                View All{" "}
+              </div>
             </div>
           </div>
           {/* //<> Project card section */}
@@ -218,7 +228,9 @@ const Home = () => {
             </p>
             <Button
               text="Read More"
-              onClick={() => {}}
+              onClick={() => {
+                navigate("/aboutme");
+              }}
               shortText="More.."
             ></Button>
           </div>
@@ -264,7 +276,10 @@ const Home = () => {
           <div className="col-span-12 Laptop:col-span-6 grid justify-center">
             <div className="border-2 border-slate-400 p-5">
               <div className="text-white py-3">Message me here</div>
-              <a href="mailto:akeshramasinghe@gmail.com?subject=Hello! From Portfolio">
+              <a
+                href="mailto:akeshramasinghe@gmail.com?subject=Hello! From Portfolio"
+                target="_blank"
+              >
                 <div className="text-slate-400 pb-3 flex flex-row gap-1">
                   <div className="w-[20px] h-[20px]">
                     <img
@@ -277,7 +292,7 @@ const Home = () => {
                 </div>
               </a>
 
-              <a href="sms:+393920976765">
+              <a href="sms:+393920976765" target="_blank">
                 <div className="text-slate-400 flex flex-row gap-1 pb-3">
                   <div className="w-[20px] h-[20px]">
                     <img
@@ -290,7 +305,7 @@ const Home = () => {
                 </div>
               </a>
 
-              <a href="https://wa.me/+393920976765">
+              <a href="https://wa.me/+393920976765" target="_blank">
                 <div className="text-slate-400 flex flex-row gap-1">
                   <div className="w-[20px] h-[20px]">
                     <img
