@@ -24,10 +24,10 @@ const NavigationBar = () => {
           className="hidden
         Laptop:flex Laptop:flex-row Laptop:justify-between Laptop:gap-9"
         >
-          <h1 className="text-white">#Home</h1>
-          <h1 className="text-slate-400">#Works</h1>
-          <h1 className="text-slate-400">#About-me</h1>
-          <h1 className="text-slate-400">#Contacts</h1>
+          <button className="text-white">#Home</button>
+          <button className="text-slate-400">#Works</button>
+          <button className="text-slate-400">#About-me</button>
+          <button className="text-slate-400">#Contacts</button>
           <div>
             <DropDown></DropDown>
           </div>
@@ -50,10 +50,10 @@ const NavigationBar = () => {
             } top-10 right-0 absolute bg-[#282c33] w-screen min-h-screen
             flex-col p-10 gap-9 z-10`}
           >
-            <h1 className="text-white">#Home</h1>
-            <h1 className="text-slate-400">#Works</h1>
-            <h1 className="text-slate-400">#About-me</h1>
-            <h1 className="text-slate-400">#Contacts</h1>
+            <button className="text-white">#Home</button>
+            <button className="text-slate-400">#Works</button>
+            <button className="text-slate-400">#About-me</button>
+            <button className="text-slate-400">#Contacts</button>
             <div>
               <DropDown></DropDown>
             </div>
