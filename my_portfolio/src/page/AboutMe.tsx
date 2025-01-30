@@ -1,4 +1,3 @@
-import React from "react";
 import { akeshImage, design, dots } from "../assets";
 import SkillCard from "../components/SkillCard";
 import FunFact from "../components/FunFact";
