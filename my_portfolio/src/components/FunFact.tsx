@@ -1,4 +1,3 @@
-import React from 'react'
 /**
  * Component for fun facts show
  * @param FunFactProp
