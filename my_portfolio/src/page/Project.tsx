@@ -1,3 +1,11 @@
+import {
+  deeghayuresort,
+  grpc,
+  keells,
+  portfolio,
+  schoolManagement,
+  subtitle,
+} from "../assets";
 import ProjectCard from "../components/ProjectCard";
 /**
  * Projec page, That shows the completed project
@@ -20,13 +28,82 @@ const Project = () => {
         </div>
         {/* //<> Project card section */}
         <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
-          <ProjectCard></ProjectCard>
+          <ProjectCard
+            image={portfolio}
+            onclickMore={() => {
+              window.open(
+                "https://github.com/RVPSA/my_portfolio_v.1.1",
+                "_blank"
+              );
+            }}
+            topic="Portfolio"
+            description="My portfolio project"
+            stack={["React", "Tailwind", "Docker"]}
+          ></ProjectCard>
         </div>
         <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
-          <ProjectCard></ProjectCard>
+          <ProjectCard
+            image={grpc}
+            onclickMore={() => {
+              window.open(
+                "https://github.com/RVPSA/tic-tac-toe-grpc",
+                "_blank"
+              );
+            }}
+            topic="Tic Tac Toe"
+            description="Real-time tic tac toe game"
+            stack={["React", "GO", "Docker"]}
+          ></ProjectCard>
         </div>
         <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
-          <ProjectCard></ProjectCard>
+          <ProjectCard
+            image={subtitle}
+            onclickMore={() => {
+              window.open(
+                "https://github.com/RVPSA/researchApplication",
+                "_blank"
+              );
+            }}
+            topic="Subtitle Generatoe"
+            description="Realtime Subtitle Generator for Sinhala"
+            stack={["Python", "OpenCv"]}
+          ></ProjectCard>
+        </div>
+        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
+          <ProjectCard
+            image={keells}
+            onclickMore={() => {
+              window.open("https://www.keellssuper.com/", "_blank");
+            }}
+            topic="Client Project"
+            description="Build features for e-commerce site"
+            stack={["React", ".NET", "MSSQL"]}
+          ></ProjectCard>
+        </div>
+        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
+          <ProjectCard
+            image={deeghayuresort}
+            onclickMore={() => {
+              window.open("https://deeghayutravel.netlify.app/", "_blank");
+            }}
+            topic="Client Project"
+            description="Simple website for Resort (Freelance)"
+            stack={["React", "Tailwind", "Netlify"]}
+          ></ProjectCard>
+        </div>
+        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
+          <ProjectCard
+            image={schoolManagement}
+            onclickMore={() => {
+              window.open(
+                "https://github.com/RVPSA/school_management_be",
+                "_blank"
+              );
+            }}
+            topic="School Management"
+            description="School managemet system"
+            stack={["React", ".NET", "MSSQL"]}
+          ></ProjectCard>
         </div>
       </div>
     </>
