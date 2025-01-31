@@ -25,15 +25,21 @@ import {
 import SplitText from "../sideSupportComponent/SplitText";
 import ProjectCard from "../components/ProjectCard";
 import SkillCard from "../components/SkillCard";
-import { Link, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
+import en from "../utilities/en/en.json";
+
 //@ts-ignore
 import LogoWall from "../sideSupportComponent/LogoWall";
+import { useTranslation } from "react-i18next";
 /**
  * Home page
  *
  */
 const Home = () => {
   const navigate = useNavigate();
+
+  //<> To chage the laguage when user changing the type
+  const [t, i18n] = useTranslation("home");
 
   // <> Images for skill section
   const logoImgs = [
@@ -56,19 +62,25 @@ const Home = () => {
         <div className="col-span-12 STablet:col-span-7">
           {/* // TODO Try to increase the gap between lines. */}
           <p className="text-3xl text-white font-bold">
-            Akesh is a <span className="text-[#775288]">Web designer</span> and
-            a{" "}
-            <span className="text-[#775288]">fullstack software Engineer</span>.
+            {t("home.mainDescription.normal1")}
+            <span className="text-[#775288]">
+              {t("home.mainDescription.highlight1")}
+            </span>
+            {t("home.mainDescription.normal1")}
+            <span className="text-[#775288]">
+              {t("home.mainDescription.highlight2")}
+            </span>
+            .
           </p>
           <h1 className="text-lg text-slate-400 pt-8 pb-6">
-            He crafts responsive web sites where technologies meet creative
+            {t("home.subDescription")}
           </h1>
           <Button
-            text="Contact me !!"
+            text={t("home.contactButton")}
             onClick={() => {
               navigate("/contact");
             }}
-            shortText="Call !"
+            shortText={t("home.contactButtonShort")}
           ></Button>
         </div>
         {/* //<> Image section and current status */}
@@ -94,7 +106,7 @@ const Home = () => {
             <div className="w-[15px] h-[15px] bg-[#775288] col-span-1 justify-center"></div>
             <div className="col-span-11 justify-center items-center">
               <SplitText
-                text="Currently working on portfolio"
+                text={t("home.currentlyWorkingDescription")}
                 className=""
                 delay={120}
                 animationFrom={{
@@ -112,7 +124,7 @@ const Home = () => {
         {/* //<> Tag line section,this section is hide on all mobile screen */}
         <div className="hidden STablet:grid col-span-12 justify-center mt-7">
           <div className="text-white border-2 p-3 border-slate-400 relative">
-            With great power comes great Elctricity bill
+            {t("home.tag")}
             <div
               className={`absolute -top-3 left-3 w-[19px] h-[19px] bg-[#282c33]`}
             >
@@ -134,7 +146,7 @@ const Home = () => {
           </div>
           <div className="grid justify-end">
             <div className="text-white border-x-2 border-b-2 p-3 border-slate-400">
-              -Dr. Who
+              {t("home.tagAuthor")}
             </div>
           </div>
         </div>
@@ -147,7 +159,7 @@ const Home = () => {
                 <span className="text-[#775288] text-lg Laptop:text-2xl font-bold">
                   #
                 </span>
-                projects
+                {t("home.project.title")}
               </div>
             </div>
             <div className="h-[2px] bg-[#775288] col-span-4 Laptop:col-span-5"></div>
@@ -158,7 +170,7 @@ const Home = () => {
                   navigate("/work");
                 }}
               >
-                View all
+                {t("home.project.view")}
               </div>
               {/* //<> For mobile screen */}
               <div
@@ -167,7 +179,7 @@ const Home = () => {
                   navigate("/work");
                 }}
               >
-                View
+                {t("home.project.viewShortText")}
               </div>
             </div>
           </div>
@@ -181,9 +193,9 @@ const Home = () => {
                   "_blank"
                 );
               }}
-              topic="Portfolio"
-              description="My portfolio project"
-              stack={["React", "Tailwind", "Docker"]}
+              topic={t("home.project.firstCard.topic")}
+              description={t("home.project.firstCard.description")}
+              stack={en.home.project.firstCard.stack}
             ></ProjectCard>
           </div>
           <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-center">
@@ -195,9 +207,9 @@ const Home = () => {
                   "_blank"
                 );
               }}
-              topic="Tic Tac Toe"
-              description="Real-time tic tac toe game"
-              stack={["React", "GO", "Docker"]}
+              topic={t("home.project.secondCard.topic")}
+              description={t("home.project.secondCard.description")}
+              stack={en.home.project.secondCard.stack}
             ></ProjectCard>
           </div>
           <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-center">
@@ -209,9 +221,9 @@ const Home = () => {
                   "_blank"
                 );
               }}
-              topic="Subtitle Generatoe"
-              description="Realtime Subtitle Generator for Sinhala"
-              stack={["Python", "OpenCv"]}
+              topic={t("home.project.thirdCard.topic")}
+              description={t("home.project.thirdCard.description")}
+              stack={en.home.project.thirdCard.stack}
             ></ProjectCard>
           </div>
         </div>
@@ -224,7 +236,7 @@ const Home = () => {
                 <span className="text-[#775288] text-lg Laptop:text-2xl font-bold">
                   #
                 </span>
-                skills
+                {t("home.skill.title")}
               </div>
             </div>
             <div className="h-[2px] bg-[#775288] col-span-4 Laptop:col-span-5"></div>
@@ -246,38 +258,34 @@ const Home = () => {
           <div className="col-span-12 gap-3 Laptop:col-span-6 grid grid-cols-12">
             <div className="col-span-6 Laptop:col-span-4">
               <SkillCard
-                skillType="Languages"
-                skills={["JavaScript", "TypeScript", "C#", "HTML", "CSS"]}
+                skillType={t("home.skill.firstCard.skillType")}
+                skills={en.home.skill.firstCard.skills}
               ></SkillCard>
             </div>
             <div className="col-span-6 Laptop:col-span-4">
-              <SkillCard skillType="Databases" skills={["MSSQL"]}></SkillCard>
+              <SkillCard
+                skillType={t("home.skill.secondCard.skillType")}
+                skills={en.home.skill.secondCard.skills}
+              ></SkillCard>
             </div>
             <div className="col-span-6 Laptop:col-span-4">
               <SkillCard
-                skillType="Frameworks"
-                skills={[
-                  "React",
-                  ".Net",
-                  "Asp.Net",
-                  "Tailwind",
-                  "Redux",
-                  "React-router",
-                ]}
+                skillType={t("home.skill.thirdCard.skillType")}
+                skills={en.home.skill.thirdCard.skills}
               ></SkillCard>
             </div>
 
             <div className="hidden Laptop:grid Laptop:col-span-4"></div>
             <div className="col-span-6 Laptop:col-span-4">
               <SkillCard
-                skillType="Tools"
-                skills={["VSCode", "Linux", "Git"]}
+                skillType={t("home.skill.forthCard.skillType")}
+                skills={en.home.skill.forthCard.skills}
               ></SkillCard>
             </div>
             <div className="col-span-6 Laptop:col-span-4">
               <SkillCard
-                skillType="Others"
-                skills={["Docker", "Kubernetes", "Oracle"]}
+                skillType={t("home.skill.fifthCard.skillType")}
+                skills={en.home.skill.fifthCard.skills}
               ></SkillCard>
             </div>
           </div>
@@ -302,44 +310,26 @@ const Home = () => {
                 <span className="text-[#775288] text-lg Laptop:text-2xl font-bold">
                   #
                 </span>
-                about-me
+                {t("home.aboutme.title")}
               </div>
             </div>
             <div className="h-[2px] bg-[#775288] col-span-4 Laptop:col-span-5"></div>
           </div>
           {/* //<> Description section */}
           <div className="col-span-12 Laptop:col-span-6 text-slate-400">
-            <h1 className="pb-2">Hello, i’m Akesh! </h1>
+            <h1 className="pb-2">{t("home.aboutme.heading")}</h1>
             <p className="hidden Laptop:flex pb-5">
-              I am a highly motivated and self-taught Fullstack Developer with a
-              strong focus on building scalable, efficient, and user-friendly
-              web applications. Over the past year, I have honed my skills in
-              both frontend and backend development, seamlessly integrating
-              responsive designs with robust server-side logic. I have worked
-              with a diverse range of clients, helping them enhance their online
-              presence by delivering end-to-end solutions that are both visually
-              appealing and technically sound. My passion for learning drives me
-              to stay ahead of the curve by exploring the latest technologies,
-              frameworks, and best practices in web development. I am committed
-              to creating seamless, high-performance, and impactful digital
-              experiences tailored to the unique needs of each project.
+            {t("home.aboutme.longText")}
             </p>
             <p className="Laptop:hidden pb-5">
-              I am a self-taught Fullstack Developer focused on building
-              scalable, efficient, and user-friendly web applications. With
-              expertise in both frontend and backend development, I create
-              seamless, high-performance digital experiences. I have worked with
-              diverse clients, delivering visually appealing and technically
-              sound solutions. Passionate about learning, I stay updated with
-              the latest technologies to ensure innovative and impactful web
-              development.
+              {t("home.aboutme.shortText")}
             </p>
             <Button
-              text="Read More"
+              text={t("home.aboutme.readMoreButton")}
               onClick={() => {
                 navigate("/aboutme");
               }}
-              shortText="More.."
+              shortText={t("home.aboutme.readmoreShort")}
             ></Button>
           </div>
           {/* //<> Image Section */}
@@ -371,7 +361,7 @@ const Home = () => {
                 <span className="text-[#775288] text-lg Laptop:text-2xl font-bold">
                   #
                 </span>
-                contacts
+                {t("home.contact.title")}
               </div>
             </div>
             <div className="h-[2px] bg-[#775288] col-span-4 Laptop:col-span-5"></div>
@@ -379,13 +369,14 @@ const Home = () => {
           {/* //<> Description section */}
           <div className="col-span-12 Laptop:col-span-6">
             <p className="text-slate-400">
-              I’m interested in freelance opportunities. However, if you have
-              other request or question, don’t hesitate to contact me
+              {t("home.contact.description")}
             </p>
           </div>
           <div className="col-span-12 Laptop:col-span-6 grid justify-center">
             <div className="border-2 border-slate-400 p-5">
-              <div className="text-white py-3">Message me here</div>
+              <div className="text-white py-3">
+                {t("home.contact.messageBox.title")}
+              </div>
               <a
                 href="mailto:akeshramasinghe@gmail.com?subject=Hello! From Portfolio"
                 target="_blank"
@@ -398,7 +389,7 @@ const Home = () => {
                       className="w-full h-full object-fill"
                     />
                   </div>
-                  <div>akeshramasinghe@gmail.com</div>
+                  <div>{t("home.contact.messageBox.email.mail")}</div>
                 </div>
               </a>
 
@@ -411,7 +402,7 @@ const Home = () => {
                       className="w-full h-full object-fill"
                     />
                   </div>
-                  <div>+393920976765</div>
+                  <div>{t("home.contact.messageBox.sms.phone")}</div>
                 </div>
               </a>
 
@@ -424,7 +415,7 @@ const Home = () => {
                       className="w-full h-full object-fill"
                     />
                   </div>
-                  <div>+393920976765</div>
+                  <div>{t("home.contact.messageBox.wtzapp.phone")}</div>
                 </div>
               </a>
             </div>

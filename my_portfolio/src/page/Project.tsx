@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   deeghayuresort,
   grpc,
@@ -11,6 +12,9 @@ import ProjectCard from "../components/ProjectCard";
  * Projec page, That shows the completed project
  */
 const Project = () => {
+
+    const [t, i18n] = useTranslation("work");
+
   return (
     <>
       <div className="grid grid-cols-12 pt-12 gap-5">
@@ -19,11 +23,11 @@ const Project = () => {
           <div className="col-span-12 text-white">
             <div className="w-full text-xl font-semibold">
               <span className="text-[#775288] text-2xl font-bold">/</span>
-              Projects
+              {t("project.title")}
             </div>
           </div>
           <div className="col-span-12">
-            <div className="text-slate-400">List of my projects </div>
+            <div className="text-slate-400">{t("project.subtitle")}</div>
           </div>
         </div>
         {/* //<> Project card section */}
@@ -36,8 +40,8 @@ const Project = () => {
                 "_blank"
               );
             }}
-            topic="Portfolio"
-            description="My portfolio project"
+            topic={t("project.firstCard.topic")}
+            description={t("project.firstCard.description")}
             stack={["React", "Tailwind", "Docker"]}
           ></ProjectCard>
         </div>
@@ -50,8 +54,8 @@ const Project = () => {
                 "_blank"
               );
             }}
-            topic="Tic Tac Toe"
-            description="Real-time tic tac toe game"
+            topic={t("project.secondCard.topic")}
+            description={t("project.secondCard.description")}
             stack={["React", "GO", "Docker"]}
           ></ProjectCard>
         </div>
@@ -64,8 +68,8 @@ const Project = () => {
                 "_blank"
               );
             }}
-            topic="Subtitle Generatoe"
-            description="Realtime Subtitle Generator for Sinhala"
+            topic={t("project.thirdCard.topic")}
+            description={t("project.thirdCard.description")}
             stack={["Python", "OpenCv"]}
           ></ProjectCard>
         </div>
@@ -75,8 +79,8 @@ const Project = () => {
             onclickMore={() => {
               window.open("https://www.keellssuper.com/", "_blank");
             }}
-            topic="Client Project"
-            description="Build features for e-commerce site"
+            topic={t("project.forthCard.topic")}
+            description={t("project.forthCard.description")}
             stack={["React", ".NET", "MSSQL"]}
           ></ProjectCard>
         </div>
@@ -86,8 +90,8 @@ const Project = () => {
             onclickMore={() => {
               window.open("https://deeghayutravel.netlify.app/", "_blank");
             }}
-            topic="Client Project"
-            description="Simple website for Resort (Freelance)"
+            topic={t("project.fifthCard.topic")}
+            description={t("project.fifthCard.description")}
             stack={["React", "Tailwind", "Netlify"]}
           ></ProjectCard>
         </div>
@@ -100,8 +104,8 @@ const Project = () => {
                 "_blank"
               );
             }}
-            topic="School Management"
-            description="School managemet system"
+            topic={t("project.sixthCard.topic")}
+            description={t("project.sixthCard.description")}
             stack={["React", ".NET", "MSSQL"]}
           ></ProjectCard>
         </div>

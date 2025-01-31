@@ -1,7 +1,9 @@
-import React from "react";
 import { call, email, github, linkedin, whatsapp } from "../assets";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+
+    const [t, i18n] = useTranslation("contact");
   return (
     <>
       <div className="grid grid-cols-12 py-12 gap-5">
@@ -10,23 +12,22 @@ const Contact = () => {
           <div className="col-span-12 text-white">
             <div className="w-full text-xl font-semibold">
               <span className="text-[#775288] text-2xl font-bold">/</span>
-              Contacts
+              {t("contact.title")}
             </div>
           </div>
           <div className="col-span-12">
-            <div className="text-slate-400">Who am I?</div>
+            <div className="text-slate-400">{t("contact.subtitle")}</div>
           </div>
         </div>
         {/* //<> Description secton */}
         <div className="col-span-12 Laptop:col-span-6">
           <p className="text-slate-400">
-            I’m interested in freelance opportunities. However, if you have
-            other request or question, don’t hesitate to contact me
+           {t("contact.description")}
           </p>
         </div>
         <div className="col-span-12 Laptop:col-span-6 grid justify-center">
           <div className="border-2 border-slate-400 p-5">
-            <div className="text-white py-3">Message me here</div>
+            <div className="text-white py-3">{t("contact.messageBox.title")}</div>
             <a href="mailto:akeshramasinghe@gmail.com?subject=Hello! From Portfolio" target="_blank">
               <div className="text-slate-400 pb-3 flex flex-row gap-1">
                 <div className="w-[20px] h-[20px]">
@@ -36,7 +37,7 @@ const Contact = () => {
                     className="w-full h-full object-fill"
                   />
                 </div>
-                <div>akeshramasinghe@gmail.com</div>
+                <div>{t("contact.email.mail")}</div>
               </div>
             </a>
 
@@ -49,7 +50,7 @@ const Contact = () => {
                     className="w-full h-full object-fill"
                   />
                 </div>
-                <div>+393920976765</div>
+                <div>{t("contact.sms.phone")}</div>
               </div>
             </a>
 
@@ -62,7 +63,7 @@ const Contact = () => {
                     className="w-full h-full object-fill"
                   />
                 </div>
-                <div>+393920976765</div>
+                <div>{t("contact.wtzapp.phone")}</div>
               </div>
             </a>
           </div>
@@ -71,7 +72,7 @@ const Contact = () => {
         <div className="col-span-12 items-center pb-9 text-white">
           <div className="w-full text-xl font-semibold">
             <span className="text-[#775288] text-2xl font-bold">#</span>
-            all-media
+            {t("contact.secondTitle")}
           </div>
         </div>
         <div className="col-span-12 flex flex-row gap-3">

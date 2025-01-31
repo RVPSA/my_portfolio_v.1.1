@@ -1,0 +1,27 @@
+{
+    "contact":{
+        "title": "Contatti",
+    "description": "Sono interessato a opportunità di freelance. Tuttavia, se hai altre richieste o domande, non esitare a contattarmi",
+    "subtitle": "Chi sono?",      
+    "messageBox": {
+        "title": "Scrivimi qui",
+        "email": {
+            "href": "mailto:akeshramasinghe@gmail.com?subject=Ciao! Dal Portfolio",
+            "alt": "Icona email",
+            "mail": "akeshramasinghe@gmail.com"
+        },
+        "sms": {
+            "href": "sms:+393920976765",
+            "alt": "Icona chiamata",
+            "phone": "+393920976765"
+        },
+        "wtzapp": {
+            "href": "https://wa.me/+393920976765",
+            "alt": "Icona WhatsApp",
+            "phone": "+393920976765"
+        }
+    },
+    "secondTitle": "tutti-i-media"
+    }
+    
+}

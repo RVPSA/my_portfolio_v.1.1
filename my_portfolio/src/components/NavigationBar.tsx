@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import Button from "./Button";
 import { useLocation } from "react-router";
+import { useTranslation } from "react-i18next";
 
 /**
  * Navigation bar design and state handling component.
@@ -16,6 +17,8 @@ const NavigationBar = () => {
 
   const navigate = useNavigate();
   const { pathname } = useLocation();
+
+  const [t, i18n] = useTranslation("navigation");
 
   //<> handle the visibility of menu list for mobile screen
   const handleShowMenuList = () => {
@@ -55,28 +58,28 @@ const NavigationBar = () => {
             #Home
           </button> */}
           <Button
-            text="#home"
+            text={t("navigation.home")}
             isborder={activeButton === "/" ? true : false}
             onClick={() => {
               navigate("/");
             }}
           ></Button>
           <Button
-            text="#Works"
+            text={t("navigation.work")}
             isborder={activeButton === "/work" ? true : false}
             onClick={() => {
               navigate("/work");
             }}
           ></Button>
           <Button
-            text="#About-me"
+            text={t("navigation.aboutme")}
             isborder={activeButton === "/aboutme" ? true : false}
             onClick={() => {
               navigate("/aboutme");
             }}
           ></Button>
           <Button
-            text="#Contacts"
+            text={t("navigation.contact")}
             isborder={activeButton === "/contact" ? true : false}
             onClick={() => {
               navigate("/contact");
@@ -105,41 +108,41 @@ const NavigationBar = () => {
             flex-col p-10 gap-9 z-10 items-start`}
           >
             <Button
-            text="#home"
-            isborder={activeButton === "/" ? true : false}
-            onClick={() => {
-              navigate("/");
-              handleShowMenuList()
-            }}
-          ></Button>
-          <Button
-            text="#Works"
-            isborder={activeButton === "/work" ? true : false}
-            onClick={() => {
-              navigate("/work");
-              handleShowMenuList()
-            }}
-          ></Button>
-          <Button
-            text="#About-me"
-            shortText="#me"
-            isborder={activeButton === "/aboutme" ? true : false}
-            onClick={() => {
-              navigate("/aboutme");
-              handleShowMenuList()
-            }}
-          ></Button>
-          <Button
-            text="#Contacts"
-            isborder={activeButton === "/contact" ? true : false}
-            onClick={() => {
-              navigate("/contact");
-              handleShowMenuList()
-            }}
-          ></Button>
-          <div>
-            <DropDown></DropDown>
-          </div>
+              text={t("navigation.home")}
+              isborder={activeButton === "/" ? true : false}
+              onClick={() => {
+                navigate("/");
+                handleShowMenuList();
+              }}
+            ></Button>
+            <Button
+              text={t("navigation.work")}
+              isborder={activeButton === "/work" ? true : false}
+              onClick={() => {
+                navigate("/work");
+                handleShowMenuList();
+              }}
+            ></Button>
+            <Button
+              text={t("navigation.aboutme")}
+              shortText="#me"
+              isborder={activeButton === "/aboutme" ? true : false}
+              onClick={() => {
+                navigate("/aboutme");
+                handleShowMenuList();
+              }}
+            ></Button>
+            <Button
+              text={t("navigation.contact")}
+              isborder={activeButton === "/contact" ? true : false}
+              onClick={() => {
+                navigate("/contact");
+                handleShowMenuList();
+              }}
+            ></Button>
+            <div>
+              <DropDown></DropDown>
+            </div>
           </div>
         </div>
       </div>

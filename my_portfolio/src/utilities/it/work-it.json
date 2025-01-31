@@ -1,0 +1,44 @@
+{
+    "project":{
+        "title": "lavori",
+    "subtitle": "Elenco dei miei progetti",
+    "viewShortText": "Visualizza",
+    "firstCard": {
+        "topic": "Portfolio",
+        "description": "Il mio progetto portfolio",
+        "stack": ["React", "Tailwind", "Docker"],
+        "link": "https://github.com/RVPSA/my_portfolio_v.1.1"
+    },
+    "secondCard": {
+        "topic": "Tris",
+        "description": "Gioco Tris in tempo reale",
+        "stack": ["React", "GO", "Docker"],
+        "link": "https://github.com/RVPSA/tic-tac-toe-grpc"
+    },
+    "thirdCard": {
+        "topic": "Generatore di Sottotitoli",
+        "description": "Generatore di sottotitoli in tempo reale per Sinhala",
+        "stack": ["Python", "OpenCv"],
+        "link": "https://github.com/RVPSA/researchApplication"
+    },
+    "forthCard": {
+        "topic": "Progetto Cliente",
+        "description": "Sviluppo di funzionalità per un sito e-commerce",
+        "stack": ["React", ".NET", "MSSQL"],
+        "link": "https://www.keellssuper.com/"
+    },
+    "fifthCard": {
+        "topic": "Progetto Cliente",
+        "description": "Sito web semplice per un resort (Freelance)",
+        "stack": ["React", "Tailwind", "Netlify"],
+        "link": "https://deeghayutravel.netlify.app/"
+    },
+    "sixthCard": {
+        "topic": "Gestione Scolastica",
+        "description": "Sistema di gestione scolastica",
+        "stack": ["React", ".NET", "MSSQL"],
+        "link": "https://github.com/RVPSA/school_management_be"
+    }
+    }
+    
+}

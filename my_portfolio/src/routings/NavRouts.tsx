@@ -11,8 +11,8 @@ const NavRouts = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout></Layout>}>
-          {Path.map((data) => {
-            return <Route path={data.path} element={data.element} />;
+          {Path.map((data,index) => {
+            return <Route path={data.path} element={data.element} key={index}/>;
           })}
         </Route>
       </Routes>

@@ -1,0 +1,49 @@
+{
+    "aboutme":{
+        "title":"about-me",
+        "subtitle":"Who am I?",  
+        "heading":"Hello, i’m Akesh!",
+        "longText":"I am a highly motivated and self-taught Fullstack Developer with a strong focus on building scalable, efficient, and user-friendly web applications. Over the past year, I have honed my skills inboth frontend and backend development, seamlessly integratingresponsive designs with robust server-side logic. I have worked with a diverse range of clients, helping them enhance their online presence by delivering end-to-end solutions that are both visually appealing and technically sound. My passion for learning drives me to stay ahead of the curve by exploring the latest technologies,frameworks, and best practices in web development. I am committed to creating seamless, high-performance, and impactful digital experiences tailored to the unique needs of each project.",
+        "shortText":"I am a self-taught Fullstack Developer focused on building scalable, efficient, and user-friendly web applications. With expertise in both frontend and backend development, I create seamless, high-performance digital experiences. I have worked with diverse clients, delivering visually appealing and technically sound solutions. Passionate about learning, I stay updated with the latest technologies to ensure innovative and impactful web development.",
+        "secondTitle":"skills",
+        "skill":{
+            "title":"skills",
+            "firstCard":{
+                "skillType":"Languages",
+                "skills":["JavaScript", "TypeScript", "C#", "HTML", "CSS"]
+            },
+            "secondCard":{
+                "skillType":"Databases",
+                "skills":["MSSQL"]
+            },
+            "thirdCard":{
+                "skillType":"Frameworks",
+                "skills":[
+                    "React",
+                    ".Net",
+                    "Asp.Net",
+                    "Tailwind",
+                    "Redux",
+                    "React-router"
+                  ]
+            },
+            "forthCard":{
+                "skillType":"Tools",
+                "skills":["VSCode", "Linux", "Git"]
+            },
+            "fifthCard":{
+                "skillType":"Others",
+                "skills":["Docker", "Kubernetes", "Oracle"]
+            }
+        },
+        "thirdTitle":"my-fun-facts",
+        "funFacts":{
+            "fact1":"I like summer more than winter",
+            "fact2":"I like Ceylon Tea more than Coffee",
+            "fact3":"I am stil in school",
+            "fact4":"I like to travel",
+            "fact5":"I like a vehicle lover"
+        }
+
+    }
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 /**
  * Drop Down component
@@ -20,6 +21,11 @@ const DropDown = () => {
     setName(name);
     setShowList(!showList);
   };
+
+  const[t,i18n] = useTranslation("global")
+  const handleChangeLanguage = (lang:string)=>{
+    i18n.changeLanguage(lang)
+  }
   return (
     <div className="text-white relative inline-block text-left">
       {/* //<> Upper part of the dropdown with arrow */}
@@ -69,6 +75,7 @@ const DropDown = () => {
               id="menu-item-0"
               onClick={() => {
                 handleShowName("IT");
+                handleChangeLanguage("it")
               }}
             >
               IT
@@ -82,6 +89,7 @@ const DropDown = () => {
               id="menu-item-1"
               onClick={() => {
                 handleShowName("EN");
+                handleChangeLanguage("en");
               }}
             >
               EN
