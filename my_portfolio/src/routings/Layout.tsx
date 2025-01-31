@@ -29,8 +29,8 @@ const Layout = () => {
           </a>
         </div>
         {/* //<> Design section for dots and square */}
-        <div className="hidden Laptop:flex fixed w-20 h-20 overflow-hidden top-72 -left-6">
-          <img src={dots} alt="dots" className="w-full h-full object-fill" />
+        <div className="hidden Laptop:flex fixed w-20 h-20 top-72 -left-10">
+          <img src={dots} alt="dots" className="w-32 h-full object-fill" />
         </div>
         <div className="hidden Laptop:flex fixed w-20 h-20 overflow-hidden top-72 -right-6 border-2 border-slate-400"></div>
         {/* //<> Page component showing area */}
