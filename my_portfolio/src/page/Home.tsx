@@ -8,17 +8,47 @@ import {
   email,
   call,
   whatsapp,
+  javascript,
+  typescript,
+  csharp,
+  sql,
+  reactjs,
+  dotnet,
+  tailwind,
+  github,
+  docker,
+  kubernetes,
+  portfolio,
+  grpc,
+  subtitle,
 } from "../assets";
 import SplitText from "../sideSupportComponent/SplitText";
 import ProjectCard from "../components/ProjectCard";
 import SkillCard from "../components/SkillCard";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
+//@ts-ignore
+import LogoWall from "../sideSupportComponent/LogoWall";
 /**
  * Home page
  *
  */
 const Home = () => {
   const navigate = useNavigate();
+
+  // <> Images for skill section
+  const logoImgs = [
+    { imgUrl: javascript, altText: "React Bits Logo" },
+    { imgUrl: typescript, altText: "React Bits Logo" },
+    { imgUrl: csharp, altText: "React Bits Logo" },
+    { imgUrl: sql, altText: "React Bits Logo" },
+    { imgUrl: reactjs, altText: "React Bits Logo" },
+    { imgUrl: dotnet, altText: "React Bits Logo" },
+    { imgUrl: tailwind, altText: "React Bits Logo" },
+    { imgUrl: docker, altText: "React Bits Logo" },
+    { imgUrl: kubernetes, altText: "React Bits Logo" },
+    { imgUrl: github, altText: "React Bits Logo" },
+  ];
+
   return (
     <>
       <div className="grid grid-cols-12 pt-12">
@@ -113,32 +143,76 @@ const Home = () => {
           {/* //<> Header section */}
           <div className="col-span-12 grid grid-cols-12 items-center pb-9">
             <div className="col-span-4 Laptop:col-span-2 text-white">
-              <div className="w-full text-xl font-semibold">
-                <span className="text-[#775288] text-2xl font-bold">#</span>
+              <div className="w-full text-lg Laptop:text-xl font-semibold">
+                <span className="text-[#775288] text-lg Laptop:text-2xl font-bold">
+                  #
+                </span>
                 projects
               </div>
             </div>
             <div className="h-[2px] bg-[#775288] col-span-4 Laptop:col-span-5"></div>
             <div className="col-span-3 Laptop:col-span-5 grid justify-end">
               <div
-                className="text-white cursor-pointer"
+                className="text-white cursor-pointer hidden Laptop:flex"
                 onClick={() => {
                   navigate("/work");
                 }}
               >
-                View All{" "}
+                View all
+              </div>
+              {/* //<> For mobile screen */}
+              <div
+                className="text-white cursor-pointer Laptop:hidden"
+                onClick={() => {
+                  navigate("/work");
+                }}
+              >
+                View
               </div>
             </div>
           </div>
           {/* //<> Project card section */}
           <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-center">
-            <ProjectCard></ProjectCard>
+            <ProjectCard
+              image={portfolio}
+              onclickMore={() => {
+                window.open(
+                  "https://github.com/RVPSA/my_portfolio_v.1.1",
+                  "_blank"
+                );
+              }}
+              topic="Portfolio"
+              description="My portfolio project"
+              stack={["React", "Tailwind", "Docker"]}
+            ></ProjectCard>
           </div>
           <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-center">
-            <ProjectCard></ProjectCard>
+            <ProjectCard
+              image={grpc}
+              onclickMore={() => {
+                window.open(
+                  "https://github.com/RVPSA/tic-tac-toe-grpc",
+                  "_blank"
+                );
+              }}
+              topic="Tic Tac Toe"
+              description="Real-time tic tac toe game"
+              stack={["React", "GO", "Docker"]}
+            ></ProjectCard>
           </div>
           <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-center">
-            <ProjectCard></ProjectCard>
+            <ProjectCard
+              image={subtitle}
+              onclickMore={() => {
+                window.open(
+                  "https://github.com/RVPSA/researchApplication",
+                  "_blank"
+                );
+              }}
+              topic="Subtitle Generatoe"
+              description="Realtime Subtitle Generator for Sinhala"
+              stack={["Python", "OpenCv"]}
+            ></ProjectCard>
           </div>
         </div>
         {/* //<> skill section on home page */}
@@ -146,8 +220,10 @@ const Home = () => {
           {/* //<> Header section */}
           <div className="col-span-12 grid grid-cols-12 items-center pb-9">
             <div className="col-span-4 Laptop:col-span-2 text-white">
-              <div className="w-full text-xl font-semibold">
-                <span className="text-[#775288] text-2xl font-bold">#</span>
+              <div className="w-full text-lg Laptop:text-xl font-semibold">
+                <span className="text-[#775288] text-lg Laptop:text-2xl font-bold">
+                  #
+                </span>
                 skills
               </div>
             </div>
@@ -171,35 +247,50 @@ const Home = () => {
             <div className="col-span-6 Laptop:col-span-4">
               <SkillCard
                 skillType="Languages"
-                skills={["JavaScript", "TypeScript", "C#", "Java", "SQL"]}
+                skills={["JavaScript", "TypeScript", "C#", "HTML", "CSS"]}
               ></SkillCard>
             </div>
             <div className="col-span-6 Laptop:col-span-4">
-              <SkillCard
-                skillType="Languages"
-                skills={["JavaScript", "TypeScript", "C#", "Java", "SQL"]}
-              ></SkillCard>
+              <SkillCard skillType="Databases" skills={["MSSQL"]}></SkillCard>
             </div>
             <div className="col-span-6 Laptop:col-span-4">
               <SkillCard
-                skillType="Languages"
-                skills={["JavaScript", "TypeScript", "C#", "Java", "SQL"]}
+                skillType="Frameworks"
+                skills={[
+                  "React",
+                  ".Net",
+                  "Asp.Net",
+                  "Tailwind",
+                  "Redux",
+                  "React-router",
+                ]}
               ></SkillCard>
             </div>
 
             <div className="hidden Laptop:grid Laptop:col-span-4"></div>
             <div className="col-span-6 Laptop:col-span-4">
               <SkillCard
-                skillType="Languages"
-                skills={["JavaScript", "TypeScript", "C#", "Java", "SQL"]}
+                skillType="Tools"
+                skills={["VSCode", "Linux", "Git"]}
               ></SkillCard>
             </div>
             <div className="col-span-6 Laptop:col-span-4">
               <SkillCard
-                skillType="Languages"
-                skills={["JavaScript", "TypeScript", "C#", "Java", "SQL"]}
+                skillType="Others"
+                skills={["Docker", "Kubernetes", "Oracle"]}
               ></SkillCard>
             </div>
+          </div>
+          <div className="col-span-12 relative">
+            <LogoWall
+              items={logoImgs}
+              direction="horizontal"
+              pauseOnHover={true}
+              size="clamp(8rem, 1rem + 20vmin, 25rem)"
+              duration="45s"
+              bgColor="#282c33"
+              bgAccentColor=""
+            ></LogoWall>
           </div>
         </div>
         {/* //<> About me section on Home page */}
@@ -207,8 +298,10 @@ const Home = () => {
           {/* //<> Header section */}
           <div className="col-span-12 grid grid-cols-12 pb-9 items-center">
             <div className="col-span-4 Laptop:col-span-2 text-white">
-              <div className="w-full text-xl font-semibold">
-                <span className="text-[#775288] text-2xl font-bold">#</span>
+              <div className="w-full text-lg Laptop:text-xl font-semibold">
+                <span className="text-[#775288] text-lg Laptop:text-2xl font-bold">
+                  #
+                </span>
                 about-me
               </div>
             </div>
@@ -217,14 +310,29 @@ const Home = () => {
           {/* //<> Description section */}
           <div className="col-span-12 Laptop:col-span-6 text-slate-400">
             <h1 className="pb-2">Hello, i’m Akesh! </h1>
-            <p className="pb-5">
-              I’m a self-taught front-end developer based in Kyiv, Ukraine. I
-              can develop responsive websites from scratch and raise them into
-              modern user-friendly web experiences. Transforming my creativity
-              and knowledge into a websites has been my passion for over a year.
-              I have been helping various clients to establish their presence
-              online. I always strive to learn about the newest technologies and
-              frameworks.
+            <p className="hidden Laptop:flex pb-5">
+              I am a highly motivated and self-taught Fullstack Developer with a
+              strong focus on building scalable, efficient, and user-friendly
+              web applications. Over the past year, I have honed my skills in
+              both frontend and backend development, seamlessly integrating
+              responsive designs with robust server-side logic. I have worked
+              with a diverse range of clients, helping them enhance their online
+              presence by delivering end-to-end solutions that are both visually
+              appealing and technically sound. My passion for learning drives me
+              to stay ahead of the curve by exploring the latest technologies,
+              frameworks, and best practices in web development. I am committed
+              to creating seamless, high-performance, and impactful digital
+              experiences tailored to the unique needs of each project.
+            </p>
+            <p className="Laptop:hidden pb-5">
+              I am a self-taught Fullstack Developer focused on building
+              scalable, efficient, and user-friendly web applications. With
+              expertise in both frontend and backend development, I create
+              seamless, high-performance digital experiences. I have worked with
+              diverse clients, delivering visually appealing and technically
+              sound solutions. Passionate about learning, I stay updated with
+              the latest technologies to ensure innovative and impactful web
+              development.
             </p>
             <Button
               text="Read More"
@@ -259,8 +367,10 @@ const Home = () => {
           {/* //<> Header section */}
           <div className="col-span-12 grid grid-cols-12 items-center pb-9">
             <div className="col-span-4 Laptop:col-span-2 text-white">
-              <div className="w-full text-xl font-semibold">
-                <span className="text-[#775288] text-2xl font-bold">#</span>
+              <div className="w-full text-lg Laptop:text-xl font-semibold">
+                <span className="text-[#775288] text-lg Laptop:text-2xl font-bold">
+                  #
+                </span>
                 contacts
               </div>
             </div>
