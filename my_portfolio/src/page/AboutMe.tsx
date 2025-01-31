@@ -61,32 +61,29 @@ const AboutMe = () => {
         <div className="col-span-6 Laptop:col-span-3">
           <SkillCard
             skillType="Languages"
-            skills={["JavaScript", "TypeScript", "C#", "Java", "SQL"]}
+            skills={["JavaScript", "TypeScript", "C#","HTML","CSS"]}
           ></SkillCard>
         </div>
         <div className="col-span-6 Laptop:col-span-3">
-          <SkillCard
-            skillType="Languages"
-            skills={["JavaScript", "TypeScript", "C#", "Java", "SQL"]}
-          ></SkillCard>
+        <SkillCard skillType="Databases" skills={["MSSQL"]}></SkillCard>
         </div>
         <div className="col-span-6 Laptop:col-span-2">
-          <SkillCard
-            skillType="col-span-6 Languages"
-            skills={["JavaScript", "TypeScript", "C#", "Java", "SQL"]}
-          ></SkillCard>
+        <SkillCard
+                skillType="Frameworks"
+                skills={["React", ".Net", "Asp.Net", "Tailwind","Redux","React-router"]}
+              ></SkillCard>
         </div>
         <div className="col-span-6 Laptop:col-span-2">
-          <SkillCard
-            skillType="Languages"
-            skills={["JavaScript", "TypeScript", "C#", "Java", "SQL"]}
-          ></SkillCard>
+        <SkillCard
+                skillType="Tools"
+                skills={["VSCode", "Linux", "Git"]}
+              ></SkillCard>
         </div>
         <div className="col-span-6 Laptop:col-span-2">
-          <SkillCard
-            skillType="Languages"
-            skills={["JavaScript", "TypeScript", "C#", "Java", "SQL"]}
-          ></SkillCard>
+        <SkillCard
+                skillType="Others"
+                skills={["Docker", "Kubernetes", "Oracle"]}
+              ></SkillCard>
         </div>
         {/* //<> Fun fact section */}
         <div className="col-span-12 items-center pb-9 text-white">
