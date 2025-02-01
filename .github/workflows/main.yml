@@ -9,15 +9,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install node
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
 
       - name: Install dependencies
-        working-directory: my_portfolio_v.1.1/my_portfolio
+        working-directory: my_portfolio
         run: npm install
 
       - name: Build project
-        working-directory: my_portfolio_v.1.1/my_portfolio
+        working-directory: my_portfolio
         run: npm run build
