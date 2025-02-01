@@ -2,20 +2,22 @@ name: my_portfolio
 
 on: push
 jobs:
-  #Build Job
+  # Build Job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
       - name: Install node
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+
       - name: Install dependencies
-        working-directory: myportfolio
+        working-directory: my_portfolio_v.1.1/my_portfolio
         run: npm install
+
       - name: Build project
+        working-directory: my_portfolio_v.1.1/my_portfolio
         run: npm run build
-  
-  
