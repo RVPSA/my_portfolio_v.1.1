@@ -18,7 +18,7 @@ const NavigationBar = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
-  const [t, i18n] = useTranslation("navigation");
+  const [t] = useTranslation("navigation");
 
   //<> handle the visibility of menu list for mobile screen
   const handleShowMenuList = () => {
