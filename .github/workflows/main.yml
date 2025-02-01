@@ -12,8 +12,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+      - name: Change directory
+        run: cd..
       - name: Install dependencies
-        working-directory: ./myportfolio
+        working-directory: cd.. ./myportfolio
         run: npm install
       - name: Build project
         run: npm run build
