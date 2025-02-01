@@ -13,7 +13,7 @@ import ProjectCard from "../components/ProjectCard";
  */
 const Project = () => {
 
-    const [t, i18n] = useTranslation("work");
+    const [t] = useTranslation("work");
 
   return (
     <>

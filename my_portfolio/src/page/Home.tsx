@@ -39,7 +39,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   //<> To chage the laguage when user changing the type
-  const [t, i18n] = useTranslation("home");
+  const [t] = useTranslation("home");
 
   // <> Images for skill section
   const logoImgs = [

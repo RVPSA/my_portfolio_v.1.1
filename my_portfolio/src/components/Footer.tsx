@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { email, github, linkedin } from "../assets";
 
 const Footer = () => {
-    const [t, i18n] = useTranslation("footer");
+    const [t] = useTranslation("footer");
 
   return (
     <div className="w-screen border-t-2 border-slate-400 ">

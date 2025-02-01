@@ -22,7 +22,7 @@ const DropDown = () => {
     setShowList(!showList);
   };
 
-  const[t,i18n] = useTranslation("global")
+  const[_t,i18n] = useTranslation("global")
   const handleChangeLanguage = (lang:string)=>{
     i18n.changeLanguage(lang)
   }

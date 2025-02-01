@@ -4,7 +4,7 @@ import FunFact from "../components/FunFact";
 import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
-  const [t, i18n] = useTranslation("about");
+  const [t] = useTranslation("about");
   return (
     <>
       <div className="grid grid-cols-12 pt-12 gap-5">

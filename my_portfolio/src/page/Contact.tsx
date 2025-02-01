@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 const Contact = () => {
 
-    const [t, i18n] = useTranslation("contact");
+    const [t] = useTranslation("contact");
   return (
     <>
       <div className="grid grid-cols-12 py-12 gap-5">
