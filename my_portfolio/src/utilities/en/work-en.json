@@ -1,0 +1,44 @@
+{
+  "project":{
+    "title":"work",
+            "subtitle":"List of my projects ",
+            "viewShortText":"View",
+            "firstCard":{
+                "topic":"Portfolio",
+                "description":"My portfolio project",
+              "stack":["React", "Tailwind", "Docker"],
+              "link":"https://github.com/RVPSA/my_portfolio_v.1.1"
+            },
+            "secondCard":{
+                "topic":"Tic Tac Toe",
+                "description":"Real-time tic tac toe game",
+              "stack":["React", "GO", "Docker"],
+              "link":"https://github.com/RVPSA/tic-tac-toe-grpc"
+            },
+            "thirdCard":{
+                "topic":"Subtitle Generator",
+                "description":"Realtime Subtitle Generator for Sinhala",
+              "stack":["Python", "OpenCv"],
+              "link":"https://github.com/RVPSA/researchApplication"
+            },
+            "forthCard":{
+                "topic":"Client Project",
+                "description":"Build features for e-commerce site",
+              "stack":["React", ".NET", "MSSQL"],
+              "link":"https://www.keellssuper.com/"
+            },
+            "fifthCard":{
+                "topic":"Client Project",
+                "description":"Simple website for Resort (Freelance)",
+              "stack":["React", "Tailwind", "Netlify"],
+              "link":"https://deeghayutravel.netlify.app/"
+            },
+            "sixthCard":{
+                "topic":"School Management",
+                "description":"School managemet system",
+              "stack":["React", ".NET", "MSSQL"],
+              "link":"https://github.com/RVPSA/school_management_be"
+            }
+  }  
+  
+}

@@ -1,0 +1,48 @@
+{
+    "aboutme": {
+        "title": "su di me",
+        "subtitle": "Chi sono?",  
+        "heading": "Ciao, sono Akesh!",
+        "longText": "Sono un Sviluppatore Fullstack altamente motivato e autodidatta, con un forte focus sulla creazione di applicazioni web scalabili, efficienti e facili da usare. Nell'ultimo anno, ho affinato le mie competenze sia nello sviluppo frontend che backend, integrando perfettamente design reattivi con una solida logica lato server. Ho collaborato con una vasta gamma di clienti, aiutandoli a migliorare la loro presenza online attraverso soluzioni complete, visivamente accattivanti e tecnicamente solide. La mia passione per l'apprendimento mi spinge a rimanere sempre aggiornato esplorando le ultime tecnologie, framework e best practice nello sviluppo web. Sono impegnato nella creazione di esperienze digitali fluide, ad alte prestazioni e di grande impatto, su misura per le esigenze specifiche di ogni progetto.",
+        "shortText": "Sono uno Sviluppatore Fullstack autodidatta focalizzato sulla creazione di applicazioni web scalabili, efficienti e facili da usare. Con esperienza sia nello sviluppo frontend che backend, realizzo esperienze digitali fluide e ad alte prestazioni. Ho collaborato con diversi clienti, offrendo soluzioni visivamente accattivanti e tecnicamente solide. Appassionato di apprendimento, mi tengo sempre aggiornato sulle ultime tecnologie per garantire uno sviluppo web innovativo e di grande impatto.",
+        "secondTitle": "competenze",
+        "skill": {
+            "title": "competenze",
+            "firstCard": {
+                "skillType": "Linguaggi",
+                "skills": ["JavaScript", "TypeScript", "C#", "HTML", "CSS"]
+            },
+            "secondCard": {
+                "skillType": "Database",
+                "skills": ["MSSQL"]
+            },
+            "thirdCard": {
+                "skillType": "Frameworks",
+                "skills": [
+                    "React",
+                    ".Net",
+                    "Asp.Net",
+                    "Tailwind",
+                    "Redux",
+                    "React-router"
+                ]
+            },
+            "forthCard": {
+                "skillType": "Strumenti",
+                "skills": ["VSCode", "Linux", "Git"]
+            },
+            "fifthCard": {
+                "skillType": "Altro",
+                "skills": ["Docker", "Kubernetes", "Oracle"]
+            }
+        },
+        "thirdTitle": "i miei fatti divertenti",
+        "funFacts": {
+            "fact1": "Mi piace l'estate più dell'inverno",
+            "fact2": "Preferisco il tè di Ceylon al caffè",
+            "fact3": "Sono ancora a scuola",
+            "fact4": "Mi piace viaggiare",
+            "fact5": "Sono un amante dei veicoli"
+        }
+    }
+}

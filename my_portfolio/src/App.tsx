@@ -1,13 +1,12 @@
-import './App.css'
-import SkillCard from './components/SkillCard'
+import "./App.css";
+import NavRouts from "./routings/NavRouts";
 
 function App() {
-  return(
+  return (
     <>
-    <div className='bg-[#282c33] p-10'><SkillCard></SkillCard></div>
-    
+      <NavRouts></NavRouts>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

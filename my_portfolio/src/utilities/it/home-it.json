@@ -1,0 +1,99 @@
+{
+    "home": {
+        "mainDescription": {
+            "normal1": "Akesh è un",
+            "highlight1": "Web designer",
+            "normal2": "e un",
+            "highlight2": "ingegnere software fullstack"
+        },
+        "subDescription": "Realizza siti web reattivi dove la tecnologia incontra la creatività",
+        "contactButton": "Contattami!!",
+        "contactButtonShort": "Chiama",
+        "currentlyWorkingDescription": "Attualmente sto lavorando al Appointment M.S.",
+        "tag": "Con un grande potere arriva una grande bolletta elettrica",
+        "tagAuthor": "-Dr. Who",
+        "project": {
+            "title": "lavori",
+            "view": "Visualizza tutti",
+            "viewShortText": "Vedi",
+            "firstCard": {
+                "topic": "Portfolio",
+                "description": "Il mio progetto portfolio",
+                "stack": ["React", "Tailwind", "Docker"],
+                "link": "https://github.com/RVPSA/my_portfolio_v.1.1"
+            },
+            "secondCard": {
+                "topic": "Tris",
+                "description": "Gioco Tris in tempo reale",
+                "stack": ["React", "GO", "Docker"],
+                "link": "https://github.com/RVPSA/tic-tac-toe-grpc"
+            },
+            "thirdCard": {
+                "topic": "Generatore di Sottotitoli",
+                "description": "Generatore di sottotitoli in tempo reale per il Sinhala",
+                "stack": ["Python", "OpenCv"],
+                "link": "https://github.com/RVPSA/researchApplication"
+            }
+        },
+        "skill": {
+            "title": "competenze",
+            "firstCard": {
+                "skillType": "Linguaggi",
+                "skills": ["JavaScript", "TypeScript", "C#", "HTML", "CSS"]
+            },
+            "secondCard": {
+                "skillType": "Database",
+                "skills": ["MSSQL"]
+            },
+            "thirdCard": {
+                "skillType": "Frameworks",
+                "skills": [
+                    "React",
+                    ".Net",
+                    "Asp.Net",
+                    "Tailwind",
+                    "Redux",
+                    "React-router"
+                ]
+            },
+            "forthCard": {
+                "skillType": "Strumenti",
+                "skills": ["VSCode", "Linux", "Git"]
+            },
+            "fifthCard": {
+                "skillType": "Altro",
+                "skills": ["Docker", "Kubernetes", "Oracle"]
+            }
+        },
+        "aboutme": {
+            "title": "su di me",
+            "heading": "Ciao, sono Akesh!",
+            "longText":"Sono un Sviluppatore Fullstack altamente motivato e autodidatta, con un forte focus sulla creazione di applicazioni web scalabili, efficienti e facili da usare. Nell'ultimo anno, ho affinato le mie competenze sia nello sviluppo frontend che backend, integrando perfettamente design reattivi con una solida logica lato server. Ho collaborato con una vasta gamma di clienti, aiutandoli a migliorare la loro presenza online attraverso soluzioni complete, visivamente accattivanti e tecnicamente solide. La mia passione per l'apprendimento mi spinge a rimanere sempre aggiornato esplorando le ultime tecnologie, framework e best practice nello sviluppo web. Sono impegnato nella creazione di esperienze digitali fluide, ad alte prestazioni e di grande impatto, su misura per le esigenze specifiche di ogni progetto.",
+            "shortText":"Sono un Sviluppatore Fullstack autodidatta, focalizzato sulla creazione di applicazioni web scalabili, efficienti e facili da usare. Con esperienza sia nello sviluppo frontend che backend, realizzo esperienze digitali fluide e ad alte prestazioni. Ho collaborato con diversi clienti, offrendo soluzioni visivamente accattivanti e tecnicamente solide. Appassionato di apprendimento, mi tengo sempre aggiornato sulle ultime tecnologie per garantire uno sviluppo web innovativo e di grande impatto.",
+            "readMoreButton":"Leggi di più",
+            "readmoreShort":"Di più"
+        },
+        "contact": {
+            "title": "contatti",
+            "description":"Sono interessato a opportunità di lavoro freelance. Tuttavia, se hai altre richieste o domande, non esitare a contattarmi.",
+            "messageBox": {
+                "title": "Scrivimi qui",
+                "email": {
+                    "href": "mailto:akeshramasinghe@gmail.com?subject=Hello! From Portfolio",
+                    "alt": "Icona email",
+                    "mail": "akeshramasinghe@gmail.com"
+                },
+                "sms": {
+                    "href": "sms:+393920976765",
+                    "alt": "Icona chiamata",
+                    "phone": "+393920976765"
+                },
+                "wtzapp": {
+                    "href": "https://wa.me/+393920976765",
+                    "alt": "Icona WhatsApp",
+                    "phone": "+393920976765"
+                }
+            }
+        }
+    }
+}

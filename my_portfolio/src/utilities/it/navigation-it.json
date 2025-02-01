@@ -1,0 +1,8 @@
+{
+    "navigation":{
+        "home":"#home",
+        "work":"#lavori",
+        "aboutme":"#me",
+        "contact":"#contatti"
+    }
+}

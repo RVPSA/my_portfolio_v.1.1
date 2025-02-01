@@ -1,0 +1,99 @@
+{
+    "home":{
+        "mainDescription":{
+            "normal1":"Akesh is a",
+            "highlight1":"Web designer",
+            "normal2":"and a",
+            "highlight2":"fullstack software Engineer"
+        },
+        "subDescription":"He crafts responsive web sites where technologies meet creative",
+        "contactButton":"Contact-me!!",
+        "contactButtonShort":"Call",
+        "currentlyWorkingDescription":"Currently working on Appointment M.S.",
+        "tag":"With great power comes great Elctricity bill",
+        "tagAuthor":"-Dr. Who",
+        "project":{
+            "title":"work",
+            "view":"view All",
+            "viewShortText":"View",
+            "firstCard":{
+                "topic":"Portfolio",
+                "description":"My portfolio project",
+              "stack":["React", "Tailwind", "Docker"],
+              "link":"https://github.com/RVPSA/my_portfolio_v.1.1"
+            },
+            "secondCard":{
+                "topic":"Tic Tac Toe",
+                "description":"Real-time tic tac toe game",
+              "stack":["React", "GO", "Docker"],
+              "link":"https://github.com/RVPSA/tic-tac-toe-grpc"
+            },
+            "thirdCard":{
+                "topic":"Subtitle Generator",
+                "description":"Realtime Subtitle Generator for Sinhala",
+              "stack":["Python", "OpenCv"],
+              "link":"https://github.com/RVPSA/researchApplication"
+            }
+        },
+        "skill":{
+            "title":"skills",
+            "firstCard":{
+                "skillType":"Languages",
+                "skills":["JavaScript", "TypeScript", "C#", "HTML", "CSS"]
+            },
+            "secondCard":{
+                "skillType":"Databases",
+                "skills":["MSSQL"]
+            },
+            "thirdCard":{
+                "skillType":"Frameworks",
+                "skills":[
+                    "React",
+                    ".Net",
+                    "Asp.Net",
+                    "Tailwind",
+                    "Redux",
+                    "React-router"
+                  ]
+            },
+            "forthCard":{
+                "skillType":"Tools",
+                "skills":["VSCode", "Linux", "Git"]
+            },
+            "fifthCard":{
+                "skillType":"Others",
+                "skills":["Docker", "Kubernetes", "Oracle"]
+            }
+        },
+        "aboutme":{
+            "title":"about-me",
+            "heading":"Hello, i’m Akesh!",
+            "longText":"I am a highly motivated and self-taught Fullstack Developer with a strong focus on building scalable, efficient, and user-friendly web applications. Over the past year, I have honed my skills inboth frontend and backend development, seamlessly integratingresponsive designs with robust server-side logic. I have worked with a diverse range of clients, helping them enhance their online presence by delivering end-to-end solutions that are both visually appealing and technically sound. My passion for learning drives me to stay ahead of the curve by exploring the latest technologies,frameworks, and best practices in web development. I am committed to creating seamless, high-performance, and impactful digital experiences tailored to the unique needs of each project.",
+            "shortText":"I am a self-taught Fullstack Developer focused on building scalable, efficient, and user-friendly web applications. With expertise in both frontend and backend development, I create seamless, high-performance digital experiences. I have worked with diverse clients, delivering visually appealing and technically sound solutions. Passionate about learning, I stay updated with the latest technologies to ensure innovative and impactful web development.",
+            "readMoreButton":"Read more",
+            "readmoreShort":"More"
+        },
+        "contact":{
+            "title":"contacts",
+            "description":"I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me",
+            "messageBox":{
+                "title":"Message me here",
+                "email":{
+                    "href":"mailto:akeshramasinghe@gmail.com?subject=Hello! From Portfolio",
+                    "alt":"email Icon",
+                    "mail":"akeshramasinghe@gmail.com"
+                },
+                "sms":{
+                    "href":"sms:+393920976765",
+                    "alt":"call Icon",
+                    "phone":"+393920976765"
+                },
+                "wtzapp":{
+                    "href":"shttps://wa.me/+393920976765",
+                    "alt":"whatsapp Icon",
+                    "phone":"+393920976765"
+                }
+            }
+        }
+    }
+}
