@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,16 +6,12 @@
     <title>Redirecting...</title>
     <script>
         (function() {
-            var path = window.location.pathname;
-            
-            // Prevent infinite redirect loops
-            // if (!window.location.hash && path !== "/") {
-                window.location.replace(path);
-            // }
+         sessionStorage.redirect = location.pathname;
+         window.location.href = '/';   
         })();
     </script>
 </head>
 <body>
     <h1>Redirecting...</h1>
 </body>
-</html> -->
+</html>
