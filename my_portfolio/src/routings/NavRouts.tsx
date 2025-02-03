@@ -8,7 +8,7 @@ import { Path } from "./Path";
  */
 const NavRouts = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/my_portfolio_v.1.1/">
       <Routes>
         <Route element={<Layout></Layout>}>
           {Path.map((data,index) => {
