@@ -43,16 +43,16 @@ const Home = () => {
 
   // <> Images for skill section
   const logoImgs = [
-    { imgUrl: javascript, altText: "React Bits Logo" },
-    { imgUrl: typescript, altText: "React Bits Logo" },
-    { imgUrl: csharp, altText: "React Bits Logo" },
-    { imgUrl: sql, altText: "React Bits Logo" },
-    { imgUrl: reactjs, altText: "React Bits Logo" },
-    { imgUrl: dotnet, altText: "React Bits Logo" },
-    { imgUrl: tailwind, altText: "React Bits Logo" },
-    { imgUrl: docker, altText: "React Bits Logo" },
-    { imgUrl: kubernetes, altText: "React Bits Logo" },
-    { imgUrl: github, altText: "React Bits Logo" },
+    { imgUrl: javascript, altText: "Javascript Logo" },
+    { imgUrl: typescript, altText: "Typescript Logo" },
+    { imgUrl: csharp, altText: "CSharp Logo" },
+    { imgUrl: sql, altText: "SQL Logo" },
+    { imgUrl: reactjs, altText: "ReactJs Logo" },
+    { imgUrl: dotnet, altText: "Dotnet Logo" },
+    { imgUrl: tailwind, altText: "Tailwind Logo" },
+    { imgUrl: docker, altText: "Docker Logo Logo" },
+    { imgUrl: kubernetes, altText: "Kubernetes Logo" },
+    { imgUrl: github, altText: "Github Logo" },
   ];
 
   return (
