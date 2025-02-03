@@ -41,6 +41,13 @@ i18next.init({
   },
 });
 
+const pathName = window.sessionStorage.redirect;
+delete window.sessionStorage.redirect;
+
+if (pathName && pathName !== window.location.pathname) {
+  window.history.replaceState(null, "", pathName);
+}
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <I18nextProvider i18n={i18next}>
