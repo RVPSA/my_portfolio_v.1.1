@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 import Layout from "./Layout";
 import { Path } from "./Path";
 
@@ -8,15 +8,17 @@ import { Path } from "./Path";
  */
 const NavRouts = () => {
   return (
-    <BrowserRouter basename="/my_portfolio_v.1.1/">
+    <HashRouter>
       <Routes>
         <Route element={<Layout></Layout>}>
-          {Path.map((data,index) => {
-            return <Route path={data.path} element={data.element} key={index}/>;
+          {Path.map((data, index) => {
+            return (
+              <Route path={data.path} element={data.element} key={index} />
+            );
           })}
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
