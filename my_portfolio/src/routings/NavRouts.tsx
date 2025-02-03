@@ -7,14 +7,6 @@ import { Path } from "./Path";
  * Display the layout first, inside that other component
  */
 const NavRouts = () => {
-
-  const pathName = window.sessionStorage.redirect;
-  delete window.sessionStorage.redirect;
-
-  if (pathName && pathName !== window.location.pathname){
-    window.history.replaceState(null,'',pathName)
-  }
-
   return (
     <BrowserRouter basename="/my_portfolio_v.1.1/">
       <Routes>
