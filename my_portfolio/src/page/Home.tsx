@@ -66,7 +66,7 @@ const Home = () => {
             <span className="text-[#775288]">
               {t("home.mainDescription.highlight1")}
             </span>
-            {t("home.mainDescription.normal1")}
+            {t("home.mainDescription.normal2")}
             <span className="text-[#775288]">
               {t("home.mainDescription.highlight2")}
             </span>

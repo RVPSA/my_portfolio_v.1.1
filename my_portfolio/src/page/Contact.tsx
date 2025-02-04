@@ -37,7 +37,7 @@ const Contact = () => {
                     className="w-full h-full object-fill"
                   />
                 </div>
-                <div>{t("contact.email.mail")}</div>
+                <div>{t("contact.messageBox.email.mail")}</div>
               </div>
             </a>
 
@@ -50,7 +50,7 @@ const Contact = () => {
                     className="w-full h-full object-fill"
                   />
                 </div>
-                <div>{t("contact.sms.phone")}</div>
+                <div>{t("contact.messageBox.sms.phone")}</div>
               </div>
             </a>
 
@@ -63,7 +63,7 @@ const Contact = () => {
                     className="w-full h-full object-fill"
                   />
                 </div>
-                <div>{t("contact.wtzapp.phone")}</div>
+                <div>{t("contact.messageBox.wtzapp.phone")}</div>
               </div>
             </a>
           </div>
