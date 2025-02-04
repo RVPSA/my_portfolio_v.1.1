@@ -1,9 +1,9 @@
 {
     "home":{
         "mainDescription":{
-            "normal1":"Akesh is a",
-            "highlight1":"Web designer",
-            "normal2":"and a",
+            "normal1":"Akesh is a ",
+            "highlight1":"Web designer ",
+            "normal2":"and a ",
             "highlight2":"fullstack software Engineer"
         },
         "subDescription":"He crafts responsive web sites where technologies meet creative",
