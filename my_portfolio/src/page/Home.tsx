@@ -184,7 +184,7 @@ const Home = () => {
             </div>
           </div>
           {/* //<> Project card section */}
-          <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-center">
+          <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid Laptop:justify-center">
             <ProjectCard
               image={portfolio}
               onclickMore={() => {
@@ -198,7 +198,7 @@ const Home = () => {
               stack={en.home.project.firstCard.stack}
             ></ProjectCard>
           </div>
-          <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-center">
+          <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid Laptop:justify-center">
             <ProjectCard
               image={grpc}
               onclickMore={() => {
@@ -212,7 +212,7 @@ const Home = () => {
               stack={en.home.project.secondCard.stack}
             ></ProjectCard>
           </div>
-          <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-center">
+          <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid Laptop:justify-center">
             <ProjectCard
               image={subtitle}
               onclickMore={() => {

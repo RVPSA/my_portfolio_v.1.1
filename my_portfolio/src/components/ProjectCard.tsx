@@ -17,7 +17,7 @@ const ProjectCard = (prop: ProjectCardProps) => {
       <div
         className="
         flex flex-row max-w-full border-4 border-[#494d56] relative
-        Laptop:flex-col Laptop:max-w-64 Laptop:bg-none"
+        Laptop:flex-col Laptop:bg-none"
       >
         {/* //<> Header section for all mobile screens */}
         <div
@@ -49,7 +49,7 @@ const ProjectCard = (prop: ProjectCardProps) => {
           })}
         </div>
         {/* //<> Footer section that contains two buttons and description */}
-        <div className="p-4">
+        <div className="p-4 w-full">
           <h1 className="text-white text-lg py-3">{prop.topic}</h1>
           <p className="text-slate-400 text-sm pb-3">{prop.description}</p>
           <div

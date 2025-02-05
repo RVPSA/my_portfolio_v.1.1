@@ -105,7 +105,7 @@ const NavigationBar = () => {
             className={`${
               !toggleMenuIcon ? "flex" : "hidden"
             } top-10 right-0 absolute bg-[#282c33] w-screen min-h-screen
-            flex-col p-10 gap-9 z-10 items-start`}
+            flex-col p-10 gap-9 z-40 items-start touch-none`}
           >
             <Button
               text={t("navigation.home")}
