@@ -31,7 +31,7 @@ const Project = () => {
           </div>
         </div>
         {/* //<> Project card section */}
-        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
+        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid">
           <ProjectCard
             image={portfolio}
             onclickMore={() => {
@@ -45,7 +45,7 @@ const Project = () => {
             stack={["React", "Tailwind", "Docker"]}
           ></ProjectCard>
         </div>
-        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
+        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid">
           <ProjectCard
             image={grpc}
             onclickMore={() => {
@@ -59,7 +59,7 @@ const Project = () => {
             stack={["React", "GO", "Docker"]}
           ></ProjectCard>
         </div>
-        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
+        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid">
           <ProjectCard
             image={subtitle}
             onclickMore={() => {
@@ -73,7 +73,7 @@ const Project = () => {
             stack={["Python", "OpenCv"]}
           ></ProjectCard>
         </div>
-        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
+        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid">
           <ProjectCard
             image={keells}
             onclickMore={() => {
@@ -84,7 +84,7 @@ const Project = () => {
             stack={["React", ".NET", "MSSQL"]}
           ></ProjectCard>
         </div>
-        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
+        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid">
           <ProjectCard
             image={deeghayuresort}
             onclickMore={() => {
@@ -95,7 +95,7 @@ const Project = () => {
             stack={["React", "Tailwind", "Netlify"]}
           ></ProjectCard>
         </div>
-        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid justify-start">
+        <div className="col-span-12 STablet:col-span-6 Laptop:col-span-4 grid">
           <ProjectCard
             image={schoolManagement}
             onclickMore={() => {
